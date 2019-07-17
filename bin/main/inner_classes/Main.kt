@@ -28,11 +28,11 @@ fun main(args: Array<String>) {
 
     println("Nested anonymous inner classes")
 
-    OuterClass.InnerInterface anonymousObject=object:Outer.InnerInterface{
-        fun display(){
+    var anonymousObject=object:OuterClass.InnerInterface{
+        override fun display(){
             println("Printing Anonymous Interface Object")
         }
     }
 
-    anonymous.display()
+    anonymousObject.display()
 }
