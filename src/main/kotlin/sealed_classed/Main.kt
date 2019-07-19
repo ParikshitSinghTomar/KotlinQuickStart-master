@@ -7,7 +7,7 @@ fun main(args: Array<String>) {
     eval(circle)
     eval(square)
     eval(rectangle)
-    //eval(x) //compile-time error.
+    // eval(x) 
 
 }
 sealed class Shape{
