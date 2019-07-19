@@ -9,10 +9,12 @@ fun main(args: Array<String>) {
     val bInner:BInner?=null
 
 
-     val f: (Int) -> Boolean = { it > 0 }
+     val f: (Int) -> Boolean = {it > 0 }
+    println("f: "+f.toString())
     println(foo(f)) // prints "true"
 
     val p: Predicate<Int> = { it > 0 }
+    println("p: "+p.toString())
     println(listOf(1, -2).filter(p)) // prints "[1]"
 
 }
